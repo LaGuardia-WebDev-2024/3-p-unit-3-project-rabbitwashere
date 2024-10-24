@@ -1,14 +1,14 @@
 <!--
 Requirements
-[  ] Two External Links
-[  ] Table
-[  ] Three CSS Rules
-[  ] Three Images
+[ yes ] Two External Links
+[ yes ] Table
+[ yes ] Three CSS Rules
+[ yes ] Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Include a :hover feature
-[ no ] Feature 2 - Include at least two Internal links
-[ no ] Feature 3 - Include a list in a tabl
+[ yes ] Feature 2 - Include at least two Internal links
+[ yes ] Feature 3 - Include a list in a tabl
 [ no ] Feature 4 - Include at least two background images in a table
 -->
 
@@ -19,27 +19,51 @@ Select ONE Additional Feature to Add
   <title>Project: Recipe book</title>
   <meta charset="utf-8">
   <style>
+    body{
+        background-image: url('https://cdn.glitch.global/42618b0c-08f7-4eab-9373-e642516c1c9d/paper%20background.jpeg?v=1729606539239');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+    }
+    .text{text-align: center;
+          width: 400px;
+          margin:auto}
+    table, th, td {
+  border: 1px solid;
+}
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+    #toc {text-align: center; }
+    ol{width: 200px; ;margin:auto}
+    img {
+  border: 5px solid #555;
+}
   </style>
 </head>
 
 <body>
 
-  <h1>____'s Recipe Book</h1>
+  <h1 class="text">Rabbit's <a href="https://www.minecraft.net/en-us">Minecraft</a> Cookbook!</h1>
+<br>
+<br>
+<br>
+  <h2 class="text">Contents:</h2>
 
-  <h2>Contents:</h2>
-
-  <ol>
-    <li><a href="?">Recipe #1</a></li>
+  <ol id="toc">
+    <li><a href="#cake">Recipe #1: Cake!</a></li>
+    <li><a href="#pumpkinpie">Recipe #2: Pumpkin Pie!!</a></li>
+    <li><a href="#cookie">Recipe #3: Cookies!!!</a></li>
   </ol>
-
-  <h2 id="?">Recipe #1</h2>
-
-  <ul>
-    <li>Time: _</li>
-    <li>Serves: _</li>
-  </ul>
-
-  <table>
+<br>
+<br>
+<br>
+  <h2 id="cake" class="text">Recipe #1 : Cake!</h2>
+<br>
+  <table class="text">
     <thead>
       <tr>
         <th>Ingredients</th>
@@ -47,13 +71,77 @@ Select ONE Additional Feature to Add
       </tr>
     </thead>
     <tbody>
+      <tr>
+      <td class="ingredients"> <ul>
+        <li> 3 Buckets of Milk</li>
+        <li> 2 Sugar</li>
+        <li> 3 Wheat</li>
+        <li> 1 Egg</li>
+        </ul> </td>
+        <td> <img src="https://cdn.glitch.global/42618b0c-08f7-4eab-9373-e642516c1c9d/minecraft%20cake%20sprite.JPG?v=1729611088563" width="150" >
+        <br> 1 Cake :3</td>
+      </tr>
     </tbody>
   </table>
-
-  <p><strong>Step 1:</strong> Do something.
+<br>
+  <p class="text"><strong>Crafting Recipe</strong>
   </p>
-
-  <p><em>Source: <a href="?">Some recipes websites</a></em></p>
+  <img src="https://cdn.glitch.global/42618b0c-08f7-4eab-9373-e642516c1c9d/minecraft-cake-crafting-recipe.jpg?v=1729695110181" width="200" class="center">
+   <br>
+   <br>
+  <h2 id="pumpkinpie" class="text">Recipe #2 : Pumpkin Pie!!</h2>
+<br>
+  <table class="text">
+    <thead>
+      <tr>
+        <th>Ingredients</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <td class="ingredients"> <ul>
+        <li> 1 Sugar</li>
+        <li> 1 Pumpkin</li>
+        <li> 1 Egg</li>
+        </ul> </td>
+        <td> <img src="https://cdn.glitch.global/42618b0c-08f7-4eab-9373-e642516c1c9d/minecraft%20pumpkin%20pie.JPG?v=1729611037502" width="150" >
+        <br> 1 Pumpkin Pie :3</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <p class="text"><strong>Crafting Recipe</strong>
+  </p>
+  <img src="https://cdn.glitch.global/42618b0c-08f7-4eab-9373-e642516c1c9d/Crafting%20Recipe%20of%20Pumpkin%20Pie.jpg?v=1729697025279" width="200" class="center">
+  <br>
+  <br>
+    <h2 id="cookie" class="text">Recipe #3 : Cookies!!!</h2>
+<br>
+  <table class="text">
+    <thead>
+      <tr>
+        <th>Ingredients</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <td class="ingredients"> <ul>
+        <li> 2 Wheat</li>
+        <li> 1 Cocoa Bean</li>
+        </ul> </td>
+        <td> <img src="https://cdn.glitch.global/42618b0c-08f7-4eab-9373-e642516c1c9d/cookie%20spritew.JPG?v=1729697594525" width="150" >
+        <br> 8 Cookies :3</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <p class="text"><strong>Crafting Recipe</strong>
+  </p>
+  <img src="https://cdn.glitch.global/42618b0c-08f7-4eab-9373-e642516c1c9d/cookie%20recpie.JPG?v=1729697724575" width="200" class="center">
+  <br>
+  <p class="text"><em>Source: <a href="https://minecraft.wiki/w/Crafting#Foodstuffs">Crafting Recipes!</a></em></p>
 
 </body>
 
